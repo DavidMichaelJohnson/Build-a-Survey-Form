@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>FCC Survey Form</title>
+    </head> 
+    <div id="main">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+            My short explanation
+        </p>
+    </div>
+    <form id="survey-form">
+        <label id="name-label">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Name" required></input><br>
+        <label id="email-label">email:</label>
+        <input type="email" name="name" id="email" placeholder="email" required></input>
+        <label id="number-label">number:</label>
+        <input type="number" name="number" id="number" min="1" max="10" placeholder="#" required></input>
+        <select id="dropdown" name="choices">
+            <option value="choice1">choice1</option>
+            <option value="choice2">choice2</option>
+        </select>
+        <input type="radio" id="left" name="direction" value="left">
+        <label for="left">Left</label>
+        <input type="radio" id="right" name="direction" value="right">
+        <label for="right">Right </label><br>
+        <input type="checkbox" id="check1" name="check1" value="check1">
+        <label for="check1">Check1</label><br>
+        <input type="checkbox" id="check2" name="check2" value="check2">
+        <label for="check1">Check2</label><br>
+        <textarea>Additional Comments</textarea>
+        <input type="submit" id="submit">
+    </form>
+</html>
